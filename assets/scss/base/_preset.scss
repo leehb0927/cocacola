@@ -1,0 +1,24 @@
+body {
+    overflow-x: hidden;
+    //메인 글씨체가 됨
+    background: $color-red;
+    cursor: none;
+}
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+}
